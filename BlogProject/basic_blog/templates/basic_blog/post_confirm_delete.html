@@ -1,0 +1,8 @@
+{%extends "basic_blog/base.html"}
+{%block content %}
+<form method="POST">
+    {%csrf_token%}
+    <p>Are you sure???? {{object}}</p>
+    <input class="btn btn-danger" value="confirm" type="submit">
+</form>
+{%endblock%}
